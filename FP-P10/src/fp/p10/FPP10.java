@@ -15,13 +15,13 @@ public class FPP10 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Declarar variables
    int num;
 num = pedirNumero();
 fiboSeq(num);
 
 }
-public static int pedirNumero(){
+public static int pedirNumero(){//METODO PARA PEDIR LA CANTIDAD DE TERMINOS QUE QUIERES MOSTRAR DE LA SERIE
 Scanner entrada = new Scanner(System.in);
 System.out.print("Ingrese el numero de terminos que desea: ");
 int num=entrada.nextInt();
@@ -31,7 +31,7 @@ pedirNumero();
 }
 return num;
 }
-public static void fiboSeq(int n){
+public static void fiboSeq(int n){//METODO PARA MOSTRAR SERIE Y SUMA
 int sec1=1,sec2=1;
 System.out.println("Los primeros "+n+" digitos de la serie de Fibonacci son: ");
 System.out.print(sec1+ " ");
